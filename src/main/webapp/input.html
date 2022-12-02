@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link rel ="stylesheet" href="css/input.css">
+</head>
+<body>
+<!-- 회원가입
+ID
+
+PW
+성별
+지역 셀렉트 옵션 사용
+취미
+자기소개 textarea 사용
+가입버튼 누르면 입력한 정보들이 새로운 페이지에 뜨게! (서블릿)
+-->
+
+<form action="Output" method="post">
+	<table width=500 align = "center" id="joinTbl">
+	<tr>
+		<td colspan="2" align="center" class="joinTd">회원가입 <br><hr></td>
+	</tr>
+	<tr>
+		<td align="center" class="td1">ID</td>
+		<td>
+	<input autofocus="autofocus" autocomplete="off"
+	placeholder = "필수,4~8자" name="ID" class="textType">
+	</td>
+	</tr>
+	<tr>
+	<td align="center" class="td1">PW</td>
+	<td>
+	<input type="password" autocomplete = "off"
+	placeholder="필수 , 영문/숫자혼합" name="PW" class="textType">
+	</td>
+	</tr>
+	<tr>
+	<td align="center" class="td1">성별</td>
+	<td class="radioTD">
+	<input type= "radio" checked="checked" name="GD" value="남자">남자
+	<input type= "radio" name="GD" value="여자" >여자	
+	<input type= "radio" name="GD" value="기타" >기타
+	</td>
+	</tr>
+	<tr>
+	<td align="center" class="td1">지역</td>
+	<td>
+	<select name="LC" class="ladioTD">
+	
+	<option>서울</option>
+	<option>경기</option>
+	<option>인천</option>
+	<option>강원</option>
+	<option>충청</option>
+	<option>전북</option>
+	<option>전남</option>
+	<option>경북</option>
+	<option>경남</option>
+	<option>제주</option>
+	</select>	
+	</td>
+	</tr>
+	<tr>
+	<td align="center" class="td1">취미</td>
+	<td>
+	<input type="checkbox" value="게임" name="HB">게임
+	<input type="checkbox" value="골프" name="HB">골프
+	<input type="checkbox" value="운동" name="HB">운동<br>
+	<input type="checkbox" value="캠핑" name="HB">캠핑
+	<input type="checkbox" value="맛집" name="HB">맛집
+	<input type="checkbox" value="방콕" name="HB">방콕
+	</td>
+	</tr>
+	<tr>
+	<td align="center" class="td1">자기소개</td>	
+	<td>
+	<textarea name="IND"></textarea>
+	</td>
+	</tr>
+	<tr>
+	<td align="center" colspan="2">
+	<button>가입</button>
+	</td>
+	</tr>
+	
+	</table>
+</form>
+
+
+
+</body>
+</html>
